@@ -172,4 +172,9 @@ public class DishServiceImpl implements DishService {
         return dishVOList;
     }
 
+
+    public void startOrStop(Dish dish) {
+        dishMapper.startOrStop(dish);
+    }
+
 }
