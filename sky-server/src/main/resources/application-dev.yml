@@ -20,3 +20,7 @@ sky:
   wechat:
     app-id: wx6a65eee085012368
     app-secret: d8f6b2db5837f65d63b9025c042384a0
+  shop:
+    address: 河北省保定市定兴县张家庄乡张家庄村东大街221号
+  baidu:
+    ak: pmjW8EHetEqMbsN5OO7CFktLUWZl6nIi

@@ -47,8 +47,6 @@ sky:
     user-secret-key: itcast
     user-ttl: 7200000
     user-token-name: authentication
-
-
   alioss:
     endpoint: ${sky.alioss.endpoint}
     access-key-id: ${sky.alioss.access-key-id}
@@ -57,3 +55,7 @@ sky:
   wechat:
     app-id: ${sky.wechat.app-id}
     app-secret: ${sky.wechat.app-secret}
+  shop:
+    address: ${sky.shop.address}
+  baidu:
+    ak: ${sky.baidu.ak}
