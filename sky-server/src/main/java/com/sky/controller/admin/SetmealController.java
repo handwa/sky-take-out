@@ -10,7 +10,6 @@ import com.sky.vo.SetmealVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,7 +27,7 @@ public class SetmealController {
      * @return
      */
     @PostMapping
-    @Cacheable(cacheNames = "setmealCache", key = "#setmealDTO.categoryId")
+    @CacheEvict(cacheNames = "setmealCache", allEntries = true)
     public Result save(@RequestBody SetmealDTO setmealDTO) {
         setmealService.saveWithDish(setmealDTO);
         return Result.success();
