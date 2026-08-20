@@ -18,7 +18,7 @@ public class OrderTask {
     /**
      * 处理支付超时订单
      */
-    @Scheduled(cron = "0 * * * * ?")//每分钟执行一次
+    @Scheduled(cron = "0 0 1 * * ?")//每天凌晨1点执行
 //    @Scheduled(cron = "1/5 * * * * ?")
     public void processTimeoutOrder(){
         log.info("处理支付超时订单:{}", LocalDateTime.now());
